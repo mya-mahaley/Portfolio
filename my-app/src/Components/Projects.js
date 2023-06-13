@@ -9,8 +9,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { Grid } from "@mui/material";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper';
+import github from "../Assets/Icons/github.png"
 import MyNavigation from "./Navigation";
 import projects from "../Assets/Icons/projects.png"
 import Contact from "./Contact";
@@ -18,6 +17,15 @@ import sbHome from "../Assets/Projects/ScreenBreak/home.png"
 import sbRestriction from "../Assets/Projects/ScreenBreak/restriction.png"
 import sbShield from "../Assets/Projects/ScreenBreak/shield.png"
 import sbScreenTime from "../Assets/Projects/ScreenBreak/appView.png"
+import alHome from "../Assets/Projects/AdLunam/alHome.png"
+import alLogin from "../Assets/Projects/AdLunam/alLogin.png"
+import alModel from "../Assets/Projects/AdLunam/alModel.png"
+import alMoon from "../Assets/Projects/AdLunam/alMoon.png"
+import alPic from "../Assets/Projects/AdLunam/alPic.png"
+import alSearch from "../Assets/Projects/AdLunam/alSearch.png"
+import alTrivia from "../Assets/Projects/AdLunam/alTrivia.png"
+
+
 
 
 
@@ -31,7 +39,7 @@ function ProjectContent({projectType}){
     if (projectType === "web") {
         return (
             <div>
-                <h1>MY WEB PROJECTS</h1>
+                <h1>MY WEB PROJECTS ... coming soon! </h1>
                 <Container className="WebContainer">
                     <h1>MY WEB PROJECTS</h1>
                 </Container>
@@ -40,12 +48,55 @@ function ProjectContent({projectType}){
         )
     }
 
-    else if (projectType === "iOS") {
+    else if (projectType === "android") {
         return (
             <div>
                 <Container className="ProjectsContainer">
                     <Row>
-                        <h1 className="ProjectTitle">ScreenBreak</h1>
+
+                         <Col className="ProjectTitleContainer">
+                            <h1 className="ProjectTitle">AdLunam</h1>
+                            <a href="https://github.com/mya-mahaley/AdLunam" target="_blank"><img className="ContactIcon" src={github} alt="GitHub"/></a>
+                        </Col>
+                        
+                    </Row>
+                    <Row>
+                        <Col xs={4}>
+                            <Carousel showThumbs={false} useKeyboardArrows={true}>
+                                <img className="CarouselImage" src={alHome} alt="ScreenBreak Restriction Page"/>
+                                <img className="CarouselImage" src={alModel} alt="ScreenBreak Shield"/>
+                                <img className="CarouselImage" src={alSearch} alt="ScreenBreak Home Page"/>
+                                <img className="CarouselImage" src={alMoon} alt="ScreenBreak App View"/>  
+                                <img className="CarouselImage" src={alTrivia} alt="ScreenBreak App View"/>  
+                                <img className="CarouselImage" src={alPic} alt="ScreenBreak App View"/>  
+                                <img className="CarouselImage" src={alLogin} alt="ScreenBreak App View"/>  
+                            </Carousel>
+                        </Col>
+                        <Col >
+                            <Row className="ProjectTextContainer">
+                            <h5 className="ProjectText">Ad Lunam is an exploratory application that allows users to expand their knowledge about astronomy.</h5>
+                            </Row>
+                            <Row className="ProjectTextContainer">
+                            <h5 className="ProjectText">Features:</h5>
+                            </Row>
+                        </Col>
+                    </Row>
+                    
+                </Container>
+            </div>
+        )
+    }
+
+    else if (projectType === "iOS") {
+        return (
+            <div>
+            <Container className="ProjectsContainer">
+                    <Row>
+                         <Col className="ProjectTitleContainer">
+                            <h1 className="ProjectTitle">ScreenBreak</h1>
+                            <a href="https://github.com/christianp-622/ScreenBreak" target="_blank"><img className="ContactIcon" src={github} alt="GitHub"/></a>
+                        </Col>
+                        
                     </Row>
                     <Row>
                         <Col xs={4}>
@@ -57,19 +108,11 @@ function ProjectContent({projectType}){
                             </Carousel>
                         </Col>
                         <Col className="ProjectTextContainer">
-                            <h3 className="ProjectText">ScreenBreak offers advanced Screen Time restrictions and monitoring</h3>
+                            <h4 className="ProjectText">ScreenBreak offers advanced Screen Time restrictions and monitoring. This project explores the capabilities of the iOS 16 Screen Time framework.</h4>
                         </Col>
                     </Row>
                     
                 </Container>
-            </div>
-        )
-    }
-
-    else if (projectType === "android") {
-        return (
-            <div>
-                <h1>MY ANDROID PROJECTS</h1>
             </div>
         )
     } 

@@ -25,7 +25,7 @@ export default function Skills() {
                         <StarModel  className="FadeModel"/>
                         <sphereGeometry />
                         </Suspense>
-                        <Environment preset="sunset" />
+                        <Environment  />
                         <OrbitControls enableZoom={false} />
                     </Canvas>
                     <h2 className="SkillMessage">{skillMessage}</h2>

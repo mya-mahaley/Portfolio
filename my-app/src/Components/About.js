@@ -10,8 +10,6 @@ export default function About() {
         <div>
             <MyNavigation/>
             <Container>
-                
-                <h1>About me</h1>
             </Container>
             <Contact/>        
         </div>

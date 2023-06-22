@@ -49,13 +49,14 @@ a {
 
 h1 {
   font-family: 'Popstar'; 
-  color: white;                         
+  color: black;                         
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Popstar'; 
-  color: rgb(78, 78, 78);                         
+  color: black;                     
 }
+
 
 .Left {
   text-align: end;
@@ -87,6 +88,17 @@ h2, h3, h4, h5, h6 {
 }
 
 .IntroText {
+  color: black;
+  text-align: end;
+  border: black 6px;
+  border-radius: 15px;
+  border-style: solid;
+  background-color: white;
+  font-style: bold;
+  padding: 3%;
+}
+
+.AboutText {
   color: black;
   text-align: end;
   border: black 6px;
@@ -138,7 +150,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .LinkButton {
-  background-color: rgb(0, 4, 255);
+  background-color: rgba(42, 45, 220, 0.932);
   border:white 4px;
   border-style: solid;
   border-radius: 10px;
@@ -203,6 +215,12 @@ h2, h3, h4, h5, h6 {
   margin: 5%;
 }
 
+.AstrologyHeader {
+  max-width: 100%;
+  height: auto;
+  margin: 5%;
+}
+
 .WebContainer {
   background-image: url("./Assets/Backgrounds/ContainerBackground.jpeg");
   background-size: cover;
@@ -233,8 +251,88 @@ h2, h3, h4, h5, h6 {
   padding: 2%;
 }
 
+.AboutContainer1 {
+  background-image: url("./Assets/Backgrounds/TitleBackground.jpeg");
+  background-size: cover;
+  border:black 10px;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-right: 2%;
+  position: relative;
+  max-width: 55%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AboutContainer2 {
+  background-image: url("./Assets/Backgrounds/ContainerBackground.jpeg");
+  background-size: cover;
+  border:black 10px;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-right: 2%;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AboutContainer3 {
+  background-image: url("./Assets/Backgrounds/Black.jpeg");
+  background-size: cover;
+  border:black 10px;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-right: 2%;
+  position: relative;
+  max-width: 55%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AboutContainer4 {
+  background-image: url("./Assets/Backgrounds/GreyPaper.jpeg");
+  background-size: cover;
+  border:black 10px;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-right: 2%;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+iframe {
+  overflow: hidden;
+  padding: 3%;
+  width: 100%;
+}
+
 .ProjectsContainer {
   background-image: url("./Assets/Backgrounds/Black.jpeg");
+  background-size: cover;
+  border:black 10px;
+  border-style: solid;
+  border-radius: 20px;
+  margin-top: 4%;
+  position: relative;
+  padding: 2%;
+}
+
+.ResumeProjectsContainer {
+  background-image: url("./Assets/Backgrounds/GreyPaper.jpeg");
   background-size: cover;
   border:black 10px;
   border-style: solid;
@@ -292,6 +390,13 @@ h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+.ResumeProjectRow {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+
+
 
 .ProjectTitle {
   color: white;
@@ -320,7 +425,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .SkillContainer1 {
-  background-image: url("./Assets/Backgrounds/BlueBackground.jpeg");
+  background-image: url("./Assets/Backgrounds/White.jpeg");
   background-size: cover;
   border:black 10px;
   border-style: solid;
@@ -356,10 +461,10 @@ h2, h3, h4, h5, h6 {
 
 .SkillMessage {
   background: rgba(42, 45, 220, 0.576);
-  border:black 4px;
+  border:white 4px;
   border-style: solid;
   border-radius: 10px;
-  color: black;
+  color: white;
   padding: 3px;
   position: absolute;
   left: 20%;
@@ -395,12 +500,20 @@ h2, h3, h4, h5, h6 {
 
 .ContactText {
   text-align: center;
+  color: rgb(198, 198, 198)
 }
 
 .ContactContainer {
   margin-top: 15%;
   align-items: center;
   justify-content: center;
+}
+
+.MediaFrame {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin: 3%;
 }
 
 @keyframes shake {
@@ -424,5 +537,20 @@ h2, h3, h4, h5, h6 {
   border-radius: 25px;
   max-height: 5px;
   margin: 1px;
+}
+
+iframe::-webkit-scrollbar {
+  width: 1px;
+}
+
+iframe::-webkit-scrollbar-track {
+  background: black;
+}
+
+iframe::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 25px;
+  max-height: 5px;
+  margin: 0px;
 }
 

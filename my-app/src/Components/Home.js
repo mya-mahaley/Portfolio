@@ -22,7 +22,7 @@ export default function Home() {
                             <Grid item><Link to="/Projects"><h4 className="LinkButton" >PROJECTS</h4></Link></Grid>
                             <Grid item><Link to="/Resume"><h4 className="LinkButton" >RESUME</h4></Link></Grid>
                             <Grid item><Link to="/Resume#Experience"><h4 className="LinkButton" >EXPERIENCE</h4></Link></Grid>
-                            <Grid item><Link to="#Skills"><h4 className="LinkButton">SKILLS</h4></Link></Grid>
+                            <Grid item><Link to="/Resume#Skills"><h4 className="LinkButton">SKILLS</h4></Link></Grid>
                             <Grid item><Link to="#Contact"><h4 className="LinkButton" >CONTACT</h4></Link></Grid>                                
                         </Grid>
                     </Col>

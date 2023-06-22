@@ -20,12 +20,11 @@ export default function Skills() {
                 <Row>
                 <Col className="SkillContainer1">
                     <Canvas  camera={{fov: 20}}>
-                        <ambientLight intensity={.7} />
+                        {/* <ambientLight intensity={.7} /> */}
                         <Suspense fallback={null}>
                         <StarModel  className="FadeModel"/>
                         <sphereGeometry />
                         </Suspense>
-                        <Environment  />
                         <OrbitControls enableZoom={false} />
                     </Canvas>
                     <h2 className="SkillMessage">{skillMessage}</h2>
@@ -45,7 +44,9 @@ export default function Skills() {
                             <Grid item><h4 className={curSkill === 6 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("JS [2022]"); setCurSkill(6);}}>JAVASCRIPT</h4></Grid>
                             <Grid item><h4 className={curSkill === 7 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("AWS [2021]"); setCurSkill(7);}}>AWS</h4></Grid>
                             <Grid item><h4 className={curSkill === 8 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("REACTJS [2022]"); setCurSkill(8);}}>REACTJS</h4></Grid>   
-                            <Grid item><h4 className={curSkill === 9 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("C++ [2020]"); setCurSkill(9);}}>C++</h4></Grid>                         
+                            <Grid item><h4 className={curSkill === 9 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("C++ [2020]"); setCurSkill(9);}}>C++</h4></Grid>      
+                            <Grid item><h4 className={curSkill === 10 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("HTML [2021]"); setCurSkill(9);}}>HTML++</h4></Grid>   
+                            <Grid item><h4 className={curSkill === 11 ? "SelectedSkill" : "Skill"} onClick={() => {setSkillMessage("CSS [2021]"); setCurSkill(9);}}>CSS</h4></Grid>                      
                         </Grid>
                     </Row>
                 </Col>

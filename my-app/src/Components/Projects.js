@@ -37,12 +37,6 @@ import pmDemo from "../Assets/Projects/PlayMaker/pmDemo.gif"
 
 
 function ProjectContent({projectType}){
-
-    const iOS = [
-        { url: "../Assets/Icons/projects.png" },
-        { url: "../Assets/Icons/email.png" },
-        { url: "../Assets/Icons/skills.png" },
-      ];
     if (projectType === "web") {
         return (
             <div>
@@ -52,8 +46,8 @@ function ProjectContent({projectType}){
                 <Container className="ProjectsContainer3">
                     <Row>
                          <Col className="ProjectTitleContainer">
-                            <a href="https://mya-mahaley.github.io/PlayMaker/#/" target="_blank"><h1 className="ProjectTitle">PlayMaker</h1></a>
-                            <a href="https://github.com/mya-mahaley/PlayMaker" target="_blank"><img className="ContactIcon" src={github} alt="GitHub"/></a>
+                            <a href="https://mya-mahaley.github.io/PlayMaker/#/" target="_blank" rel="noreferrer"><h1 className="ProjectTitle">PlayMaker</h1></a>
+                            <a href="https://github.com/mya-mahaley/PlayMaker" target="_blank" rel="noreferrer"><img className="ContactIcon" src={github} alt="GitHub"/></a>
                         </Col>
                     </Row>
                     <Row>
@@ -64,7 +58,7 @@ function ProjectContent({projectType}){
                             <Col className="ProjectTypeContainer">
                             <h4 className="ProjectText"><strong>PlayMaker is a website designed for users to create, and save intricate sports plays.</strong></h4>
                             </Col>
-                            <Col xs={8}><a href="https://mya-mahaley.github.io/PlayMaker/#/" target="_blank"><img className="GifDemo" src={pmDemo} alt="Demo of PlayMaker"/></a></Col>
+                            <Col xs={8}><a href="https://mya-mahaley.github.io/PlayMaker/#/" target="_blank" rel="noreferrer"><img className="GifDemo" src={pmDemo} alt="Demo of PlayMaker"/></a></Col>
                             </Row>
                             
                             <Row className="ProjectTextContainer">
@@ -105,7 +99,7 @@ function ProjectContent({projectType}){
 
                          <Col className="ProjectTitleContainer">
                             <h1 className="ProjectTitle">AdLunam</h1>
-                            <a href="https://github.com/mya-mahaley/AdLunam" target="_blank"><img className="ContactIcon" src={github} alt="GitHub"/></a>
+                            <a href="https://github.com/mya-mahaley/AdLunam" target="_blank" rel="noreferrer"><img className="ContactIcon" src={github} alt="GitHub"/></a>
                         </Col>
                         
                     </Row>
@@ -160,7 +154,7 @@ function ProjectContent({projectType}){
                     <Row>
                          <Col className="ProjectTitleContainer">
                             <h1 className="ProjectTitle">ScreenBreak</h1>
-                            <a href="https://github.com/christianp-622/ScreenBreak" target="_blank"><img className="ContactIcon" src={github} alt="GitHub"/></a>
+                            <a href="https://github.com/christianp-622/ScreenBreak" target="_blank" rel="noreferrer"><img className="ContactIcon" src={github} alt="GitHub"/></a>
                         </Col>
                         
                     </Row>
@@ -199,7 +193,7 @@ function ProjectContent({projectType}){
                     <Row>
                          <Col className="ProjectTitleContainerRight">
                             
-                            <a href="https://github.com/mya-mahaley/SoundStats" target="_blank"><img className="ContactIcon" src={github} alt="GitHub"/></a>
+                            <a href="https://github.com/mya-mahaley/SoundStats" target="_blank" rel="noreferrer"><img className="ContactIcon" src={github} alt="GitHub"/></a>
                             <h1 className="ProjectTitle">SoundStats</h1>
                         </Col>
                         

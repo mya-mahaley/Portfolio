@@ -35,12 +35,13 @@ export default function About() {
                    
                     <Col className="AboutContainer2">
                         <Row>
-                            <Col>
+                        <Col>
                                 <img className="MediaFrame" src={loveIsland} alt="Love Island Season 10"></img>
                             </Col>
                             <Col>
-                            <img className="MediaFrame" src={interstellar} alt="Interstellar"></img>
+                                <img className="MediaFrame" src={interstellar} alt="Interstellar"></img>
                             </Col>
+                            
                         </Row>               
                       
                     </Col>
@@ -73,7 +74,7 @@ export default function About() {
                     <Row className="">
                         <Col className="">
                             <Container className="IntroText">
-                                    <h1 ><strong>My Astrology Big Three</strong></h1>
+                                    <h1 ><strong>Astrology</strong></h1>
                             </Container>
                             <Container className="IntroText">
                                     <h2 ><strong>Sun:</strong>&nbsp;Cancer</h2>
@@ -83,7 +84,7 @@ export default function About() {
                         </Col>
                         <Col>
                             <Container className="IntroText">
-                                    <a href="https://www.16personalities.com/intj-personality" target="_blank"><h2 ><strong>MBTI: </strong>&nbsp;INTJ</h2></a>
+                                    <a href="https://www.16personalities.com/intj-personality" target="_blank" rel="noreferrer"><h2 ><strong>MBTI: </strong>&nbsp;INTJ</h2></a>
                             </Container>
                             <Container className="IntroText">
                                 <img className="MediaFrame" src={mbti} alt="INTJ"/>

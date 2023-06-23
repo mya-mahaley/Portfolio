@@ -22,7 +22,7 @@ export default function Resume() {
                         
                     </Col>
                     <Col className="ProjectTitleContainer">
-                        <a href={resumeFile} target = "_blank"><h3 className="LinkButton" >Open PDF Version</h3></a>
+                        <a href={resumeFile} target = "_blank" rel="noreferrer"><h3 className="LinkButton" >Open PDF Version</h3></a>
                     </Col>
 
                 </Row>
